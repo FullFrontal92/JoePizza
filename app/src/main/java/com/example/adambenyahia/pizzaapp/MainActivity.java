@@ -1,5 +1,6 @@
 package com.example.adambenyahia.pizzaapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -83,6 +84,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.order) {
             // Handle the camera action
         } else if (id == R.id.view_menu) {
+            Intent intent= new Intent(MainActivity.this,MenuItems.class);
+            startActivity(intent);
 
         } else if (id == R.id.todays_offers) {
 
